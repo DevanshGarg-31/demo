@@ -1,12 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(244, 243, 240);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .link a {
+            padding-left: 10px;
+        }
+
+        .portfolio {
+            padding-left: 10px;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #home {
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+
+        #connect {
+            margin-right: 20px;
+        }
+
+        .introduction {
+            margin-top: 200px;
+        }
+
+        #About div h2 {
+            text-align: center;
+        }
+
+        #About {}
+
+        #skills h2 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #skills {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+
+        span h2 {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+
+        #skills div h4 {
+            text-align: center;
+        }
+
+        #projects {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+
+        .project h2 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #connect {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .socials a{
+            display: block;
+            margin: 10px;
+            font-size: 20px;
+            margin-left: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    hi im atr
-    <div class="bi bi-arrow-90deg-down" style="color: black;"></div>
+    <header>
+        <div class="portfolio">
+            <h1 style="color: blue; font-family: fantasy;">Portfolio</h1>
+        </div>
+        <div class="link" style="margin-top: 10px; padding-left:20px;">
+            <a href="#home">Home</a>
+            <a href="#About">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="#connect">Connect</a>
+        </div>
+
+    </header>
+    <main>
+        <div id="home">
+            <div>
+                <img src="public/Images/bgremove.png" alt="" align="right" style="margin-top: -50px;">
+
+            </div>
+            <div class="introduction">
+                <h1>Myself <span style="color: blue;font-family:fantasy; font-size: 50px;">Devansh Garg</span><br> </h1>
+                <h2>A Freshman &<br>An Inspiring Software engineer</h2>
+            </div>
+
+        </div>
+        <div id="About">
+            <div style="margin-top: 100px; margin-left: 15px;">
+                <h2>About me</h2>
+                <p><b>Hi, I'm Devansh Garg. I'm currently pursuing a Bachelor of Science in Computer Science and Data
+                        Analytics from IIT Patna. Alongside my studies, I’m also enrolled in a residential program in
+                        Computer Science at PW Institute of Innovation in Bengaluru.
+
+                        I’m currently living in Bengaluru, a city known for its tech culture, but my roots are in
+                        Meerut, where I completed my schooling. My journey from Meerut to these prestigious institutes
+                        has been filled with learning, growth, and new experiences. I’m passionate about using data to
+                        solve real-world problems and am excited about the future possibilities in the tech
+                        industry.</b></p>
+            </div>
+
+        </div>
+    </main>
+    <span>
+        <h2>Skills</h2>
+    </span>
+    <div id="skills">
+        <div>
+            <h4>C Language</h4>
+            <img src="public/Images/clogo.png" alt="" height="85%" width="85%">
+        </div>
+        <div>
+            <h4>HTML</h4>
+            <img src="public/Images/html.png" alt="" height="85%" width="85%">
+        </div>
+        <div>
+            <h4>CSS</h4>
+            <img src="public/Images/css.png" alt="" height="85%" width="85%">
+        </div>
+        <div>
+            <h4>Excel</h4>
+            <img src="public/Images/Microsoft_Excel-Logo.wine.png" alt="" height="90%" width="90%">
+        </div>
+    </div>
+    <span class=" project">
+        <h2>Projects</h2>
+    </span>
+    <div id="projects">
+        <div>
+            <p style="text-align: center; font-weight: bolder;">PW Institute of Innovation Home Page</p>
+            <img src="public/Images/youtube.png" alt="" height="90%" width="90%" style="padding-left: 20px;">
+        </div>
+        <div ">
+            <p style=" text-align: center; font-weight: bolder;">SBI Landing Page</p>
+            <img src="public/Images/sbi.png" alt="" height="90%" width="90%">
+        </div>
+    </div>
+    <fieldset class="first second">
+        <legend id="CONTACT" style="margin-top: 80px; text-align: center ; font-weight: bolder;">CONTACT</legend>
+
+        <div id="connect">
+            <form style="margin-left: 100px;">
+                REACH OUT TO ME:)
+                <div>
+                    <input type="text" placeholder="NAME" size="30">
+                    <br>
+                    <input type="email" placeholder="EMAIL" size="30">
+                    <br>
+                    <input type="text" placeholder="CONTATCT NO" size="30">
+                    <br>
+                    <input type="text" placeholder="ANY OPTIONAL MESSAGE" size="30">
+                </div>
+                <button type="reset" style="background-color: black;color: white;">CANCEL</button>
+                <button style="background-color: black; color: white;">SUBMIT</button>
+
+            </form>
+            <div class="socials" style="padding-bottom: 100px;">
+                <a href="https://www.instagram.com/devansh_garg31/profilecard/?igsh=MTFiMHFuODk3eXppeQ%3D%3D"><span
+                        class="bi-instagram" style="color: palevioletred;">Instagram</span></a>
+                <a
+                    href="https://www.linkedin.com/in/devansh-garg-2a724a318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span
+                        class="bi-linkedin" style="color: blue;">Linkedin</span></a>
+                <a href="https://github.com/DevanshGarg-31"><span class="bi-github"
+                        style="color: black;">Github</span></a>
+            </div>
+
+        </div>
+
+
+
 </body>
+
 </html>
